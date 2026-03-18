@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>일기장 책 생성 - Sweetbook API</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">일기장 책 생성</a>
+            <div class="nav-auth" id="navAuth" style="opacity:1;">
+                <span style="color:rgba(255,255,255,0.8);font-size:13px;">API Key 설정됨</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="puruni-container" id="diarySection">
+                <div class="page-header">
+                    <h1>일기장 책 생성</h1>
+                    <p>JSON 파일을 업로드하여 일기장A / 일기장B 형식으로 책을 생성합니다</p>
+                </div>
+
+                <div class="config-bar">
+                    <div class="env-selector">
+                        <label><input type="radio" name="apiEnv" value="sandbox" checked /> 샌드박스</label>
+                        <label><input type="radio" name="apiEnv" value="live" /> 운영</label>
+                    </div>
+                    <input type="password" id="userApiKey" placeholder="API Key"
+                        onfocus="this.type='text'" onblur="this.type='password'" />
+                    <button class="btn btn-primary btn-sm" onclick="if(getClient()){document.getElementById('connStatus').textContent='연결됨'}">연결</button>
+                    <span id="connStatus" class="text-muted"></span>
+                    <span id="envWarning" class="env-warning" style="display:none;">운영 환경입니다. 실제 운영 데이터에 영향을 줍니다.</span>
+                </div>
+
+                <!-- 일기장 타입 선택 -->
+                <div class="section-title">일기장 타입 선택</div>
+                <div class="type-selector">
+                    <label><input type="radio" name="diaryType" value="A" checked /> 일기장A</label>
+                    <label><input type="radio" name="diaryType" value="B" /> 일기장B</label>
+                </div>
+
+                <!-- 데이터 업로드 -->
+                <div class="upload-section">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+                        <div class="upload-text">클릭하거나 파일을 드래그하여 업로드</div>
+                        <div class="upload-hint">JSON 파일만 업로드 가능합니다</div>
+                    </div>
+                    <input type="file" id="fileInput" accept=".json" />
+                    <div class="file-info" id="fileInfo">
+                        <div class="file-name" id="fileName"></div>
+                        <div class="file-size" id="fileSize"></div>
+                    </div>
+                </div>
+
+                <!-- 데이터 미리보기 -->
+                <div class="data-preview" id="dataPreview">
+                    <div class="preview-header">
+                        <h2>데이터 미리보기</h2>
+                        <span class="item-count" id="itemCount">0개 항목</span>
+                    </div>
+                    <div class="data-items" id="dataItems"></div>
+                </div>
+
+                <!-- 책 생성 옵션 -->
+                <div class="book-options" id="bookOptions">
+                    <h2 style="margin-bottom: 20px; color: #333;">책 생성 옵션</h2>
+
+                    <!-- 템플릿 UID -->
+                    <div class="section-title">템플릿 UID</div>
+                    <div class="template-uids" id="templateUidFields"></div>
+
+                    <div class="section-title">책 제목</div>
+                    <div class="cover-fields">
+                        <div class="form-group"><label for="bookTitle">책 제목 *</label><input type="text" id="bookTitle" placeholder="나의 하루 기록" required /></div>
+                    </div>
+
+                    <!-- 표지 정보 -->
+                    <div class="section-title">표지 정보</div>
+                    <div class="cover-fields" id="coverFields"></div>
+
+                    <!-- 발행면 정보 -->
+                    <div class="section-title">발행면 정보</div>
+                    <div class="publish-fields">
+                        <div class="form-group"><label for="publishTitle">발행 제목 *</label><input type="text" id="publishTitle" placeholder="나의 하루 기록" required /></div>
+                        <div class="form-group"><label for="publishDate">발행일 *</label><input type="text" id="publishDate" placeholder="2026년 2월 24일" required /></div>
+                        <div class="form-group"><label for="publishAuthor">저자 *</label><input type="text" id="publishAuthor" placeholder="홍길동" required /></div>
+                        <div class="form-group"><label for="publishHashtags">해시태그 *</label><input type="text" id="publishHashtags" placeholder="#포토북은 #역시 #스위트북" required /></div>
+                    </div>
+
+                    <div class="action-buttons" style="margin-top: 24px;">
+                        <div style="text-align:right; margin-bottom:6px; font-size:12px; color:#888;">빈 입력란에서 <kbd style="background:#f0f0f0; border:1px solid #ccc; border-radius:3px; padding:0 4px; font-size:11px;">Tab</kbd> → 기본값 자동완성</div>
+                        <button class="btn btn-primary" id="createBookBtn" disabled>일기장 책 생성하기</button>
+                        <button class="btn btn-secondary" id="pauseBtn" style="display:none;">일시중지</button>
+                        <button class="btn btn-primary" id="resumeBtn" style="display:none;">이어서하기</button>
+                        <button class="btn btn-primary" id="finalizeBtn" disabled style="display:none;">제작 (24페이지 이상 책만 가능)</button>
+                        <button class="btn btn-secondary" id="resetBtn">초기화</button>
+                    </div>
+
+                    <div class="loading" id="loading">
+                        <div class="spinner"></div>
+                        <div id="loadingText">책을 생성하는 중입니다...</div>
+                    </div>
+
+                    <div class="result-message" id="resultMessage"></div>
+
+                    <div class="log-area" id="logArea"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Sweetbook API. All rights reserved.</p>
+            <p>Powered by <code>sweetbook-sdk.js</code></p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="sweetbook-sdk-core.js"></script>
+    <script src="sweetbook-sdk-user.js"></script>
+    <script src="diary-config.js"></script>
+    <script src="book-builder.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

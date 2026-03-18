@@ -1,0 +1,414 @@
+{
+  "title": "(일기장B) 이안이의 Diary Book",
+  "cover": {
+    "frontPhoto": "https://www.sweetbook.com/api_sweetbook/images/diary/01.jpg",
+    "backPhoto": "https://www.sweetbook.com/api_sweetbook/images/diary/35.jpg",
+    "dateRange": "2024.01.06 - \n2025. 04.06",
+    "spineTitle": "이안이의 Diary Book"
+  },
+  "publish": {
+    "photo": "https://www.sweetbook.com/api_sweetbook/images/diary/42.jpg",
+    "title": "이안이의 Diary Book",
+    "publishDate": "2026년 3월 6일",
+    "author": "김수진",
+    "hashtags": "#포토북은 #역시 #스위트북",
+    "publisher": "(주)스위트북"
+  },
+  "entries": [
+    {
+      "type": "ganji",
+      "year": 2024,
+      "chapter": 1,
+      "season_title": "겨울의 기록"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "1.06",
+      "title": "오늘은 코엑스 별마당 도서관에 다…",
+      "diary_text": "오늘은 코엑스 별마당 도서관에 다녀왔다. 새해 첫 주말이라 사람이 꽤 많았지만, 높은 천장까지 빼곡히 꽂힌 책장을 올려다보니 기분이 좋아졌다. 한쪽 구석에 앉아 에세이를 한 권 골라 읽었는데, 따뜻한 문장들이 겨울 추위를 잊게 해줬다. 올해는 한 달에 두 권은 꼭 읽어야지.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/01.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "1.13",
+      "title": "익선동 호호식당에서 점심을 먹었다",
+      "diary_text": "익선동 호호식당에서 점심을 먹었다. 한옥 골목 사이로 불어오는 찬바람에 코가 빨개졌지만, 따뜻한 국물 요리 한 그릇에 몸이 금세 녹았다. 골목 구석구석을 걸으며 작은 소품가게들도 구경했는데, 손으로 빚은 도자기 컵이 예뻐서 한참을 들여다봤다. 다음에는 봄에 다시 와봐야겠다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/02.jpg"
+    },
+    {
+      "type": "naeji_textonly",
+      "break_before": "page",
+      "date": "2.17",
+      "title": "오랜만에 재래시장에 다녀왔다",
+      "diary_text": "오랜만에 재래시장에 다녀왔다. 호떡 냄새에 이끌려 줄을 섰는데, 씨앗호떡 하나 사 먹으니 달콤하고 따뜻한 게 행복했다. 어물전에서는 아주머니가 시식도 챙겨주시고, 과일가게에서는 딸기 한 팩을 골랐다. 시장 특유의 왁자지껄한 분위기가 좋다. 가끔은 이런 곳에서 활기를 충전해야 해. 손에 들고 온 딸기가 너무 빨갛고 예뻐서 집에 와서 바로 씻어 먹었다. 달콤한 겨울 딸기."
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "2.28",
+      "title": "산책하다가 하얀 강아지를 만났다",
+      "diary_text": "산책하다가 하얀 강아지를 만났다. 솜뭉치 같은 하얀 털이 너무 폭신해 보여서 다가갔더니 꼬리를 흔들며 반겨줬다. 주인분이 \"쓰다듬어도 돼요\"라고 하셔서 머리를 살살 만져줬는데, 눈을 꼭 감고 좋아하는 모습이 귀여워 죽을 뻔했다. 오늘 하루의 하이라이트.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/04.jpg"
+    },
+    {
+      "type": "ganji",
+      "year": 2024,
+      "chapter": 2,
+      "season_title": "봄의 기록"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "3.15",
+      "title": "날이 좀 풀렸다",
+      "diary_text": "날이 좀 풀렸다. 점퍼만 걸치고 나갔는데 바람이 차갑지 않아서 기분이 좋았다. 동네를 한 바퀴 돌면서 카페에서 아메리카노를 하나 사 들고 걸었다. 벤치에 앉아 사람들 구경하다 보니 시간이 훌쩍 지났다. 특별한 건 없었지만, 이런 평범한 오후가 참 좋다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/05.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "3.26",
+      "title": "봄이 왔다",
+      "diary_text": "봄이 왔다. 길가에 노란 개나리가 활짝 피었고, 산수유도 슬슬 꽃봉오리를 터뜨리고 있다. 겨울 내내 앙상하던 가지들에 연초록 잎이 돋아나는 걸 보니 마음까지 싱그러워진다. 벤치에 앉아 따스한 햇살을 맞으며 눈을 감았더니 새소리가 들렸다. 이 계절이 제일 좋아.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/06.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "4.02",
+      "title": "드디어 제주도에 왔다",
+      "diary_text": "드디어 제주도에 왔다! 공항에서부터 맡아지는 바다 냄새에 기분이 확 올라갔다. 렌트카를 타고 해안도로를 달리는데 창밖으로 펼쳐지는 바다가 끝없이 파랗다. 첫째 날은 동쪽을 돌며 성산일출봉 근처에서 해녀분들이 작업하시는 모습도 구경했다. 저녁에는 흑돼지 맛집에서 고기를 실컷 구워 먹었다. 여행 첫날부터 만족.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/07.jpg"
+    },
+    {
+      "type": "naeji_gallery",
+      "break_before": "page",
+      "date": "4.03",
+      "photos": [
+        "https://www.sweetbook.com/api_sweetbook/images/diary/08.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/07.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/09.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/06.jpg"
+      ]
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "5.11",
+      "title": "요즘 발견한 카페에 또 갔다",
+      "diary_text": "요즘 발견한 카페에 또 갔다. 창가 자리에 앉으면 햇빛이 예쁘게 들어와서 책 읽기 좋다. 오늘은 딸기 라떼를 시켰는데, 위에 딸기 조각이 올려져 있어 예뻤다. 옆 테이블에서 노트북으로 작업하는 사람, 대화하는 커플, 혼자 책 읽는 사람... 각자의 방식으로 오후를 보내는 풍경이 좋았다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/09.jpg"
+    },
+    {
+      "type": "naeji_textonly",
+      "break_before": "page",
+      "date": "5.12",
+      "title": "테라스에서 만난 강아지",
+      "diary_text": "어제 갔던 카페 근처를 다시 지나가는데 작은 강아지를 데리고 산책하는 분이 계셨다. 테라스 석에 앉아 커피를 마시며 강아지가 뛰어다니는 걸 구경했다. 강아지가 나한테 다가와서 발 위에 턱을 올려놓길래 심장이 녹았다. 반려동물 키우고 싶다는 생각이 또 스멀스멀. 집에 돌아와서도 그 말랑한 발바닥 감촉이 남아있는 것 같았다. 펫샵 분양 사이트를 한참 둘러보다가 접었다. 아직은 때가 아닌 것 같다."
+    },
+    {
+      "type": "ganji",
+      "year": 2024,
+      "chapter": 3,
+      "season_title": "여름의 기록"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "6.09",
+      "title": "햇볕이 유난히 잘 드는 카페를 찾았다",
+      "diary_text": "햇볕이 유난히 잘 드는 카페를 찾았다. 통유리 너머로 초록 나무들이 보이고, 오후 햇살이 테이블 위에 따뜻하게 내려앉았다. 아이스 아메리카노를 마시며 일기를 쓰고 있는데, 이런 순간이 소소한 행복이라는 걸 다시 느낀다. 에어컨 바람과 바깥 더위의 대비가 여름의 정석.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/11.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "7.03",
+      "title": "한옥마을을 걷다가 골목 사이 좁은…",
+      "diary_text": "한옥마을을 걷다가 골목 사이 좁은 계단을 발견했다. 양옆으로 기와지붕이 올려진 돌담이 이어져 있고, 계단 위에서 내려다보니 골목 전체가 한눈에 들어왔다. 여름 한낮인데도 골목 안은 그늘져서 시원했다. 계단에 앉아 잠시 쉬면서 지나가는 사람들을 구경했다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/12.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "8.17",
+      "title": "부산 여행 첫째 날",
+      "diary_text": "부산 여행 첫째 날. 해운대에서 감천문화마을로 이동하는데 모노레일을 탔다. 높은 곳에서 내려다보는 부산 시내 풍경이 정말 멋졌다. 알록달록한 지붕들과 멀리 보이는 바다가 어우러져 그림 같았다. 좌석 옆 창문에 얼굴을 붙이고 한참 내다봤다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/13.jpg"
+    },
+    {
+      "type": "naeji_gallery",
+      "break_before": "page",
+      "date": "8.18",
+      "photos": [
+        "https://www.sweetbook.com/api_sweetbook/images/diary/14.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/13.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/27.jpg"
+      ]
+    },
+    {
+      "type": "ganji",
+      "year": 2024,
+      "chapter": 4,
+      "season_title": "가을의 기록"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "9.05",
+      "title": "익선동에 다시 갔다",
+      "diary_text": "익선동에 다시 갔다. 1월에 왔을 때와는 분위기가 완전 다르다. 여름 끝자락의 녹음이 한옥 지붕 위로 무성하게 자라 있었다. 새로 생긴 디저트 가게에서 앙버터 스콘을 하나 사서 골목 벤치에 앉아 먹었다. 익선동은 올 때마다 뭔가 새로운 게 생겨서 재미있다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/15.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "9.14",
+      "title": "산에 갔다가 흔들다리를 건넜다",
+      "diary_text": "산에 갔다가 흔들다리를 건넜다. 처음엔 무섭다고 생각했는데 막상 걸어보니 은근 재밌었다. 가운데쯤 와서 아래를 내려다보니 계곡물이 맑게 흐르고 있었다. 살짝 흔들리는 다리 위에서 바람을 맞으니 온몸의 긴장이 풀리는 기분이었다. 가을 산의 공기가 맑아서 깊게 숨 쉬었다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/16.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "9.16",
+      "title": "길가에 핀 꽃이 예뻐서 발걸음을 …",
+      "diary_text": "길가에 핀 꽃이 예뻐서 발걸음을 멈췄다. 이름은 모르겠지만 보라색과 분홍색이 섞인 작은 꽃이었다. 스마트폰으로 가까이 찍어보니 꽃잎 위에 이슬방울이 맺혀 있어 더 예뻤다. 가을이 오면 꽃도 지겠지 하는 생각에 조금 아쉬웠다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/17.jpg"
+    },
+    {
+      "type": "naeji_textonly",
+      "break_before": "page",
+      "date": "9.18",
+      "title": "도도한 길고양이",
+      "diary_text": "동네를 걷다가 길고양이 한 마리를 만났다. 담장 위에 앉아서 나를 빤히 내려다보는데, 경계하는 듯하면서도 도망가지 않았다. 조심스럽게 손을 내밀었더니 코를 킁킁거리며 냄새를 맡더니 다시 고개를 돌렸다. 도도한 고양이. 내일도 이 길로 지나가면 만날 수 있을까. 요즘 이 동네에서 고양이를 자주 마주친다. 누군가 밥을 챙겨주는 것 같은데, 골목 어귀에 작은 사료 그릇이 놓여 있는 걸 봤다. 나도 다음에 간식 하나 사가야지."
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "9.29",
+      "title": "가을이 성큼 다가온 느낌이다",
+      "diary_text": "가을이 성큼 다가온 느낌이다. 아침에 문을 열었더니 공기가 서늘해서 얇은 가디건을 하나 걸쳤다. 공원을 산책하면서 코스모스를 봤다. 분홍빛 코스모스가 바람에 흔들리는 게 정말 가을답다. 벤치에 앉아 따뜻한 캔 커피를 마시며 가만히 하늘을 올려다봤다. 높고 맑은 하늘.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/19.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "10.03",
+      "title": "하늘공원에 억새를 보러 갔다",
+      "diary_text": "하늘공원에 억새를 보러 갔다. 계단이 끝도 없이 이어져서 올라가는 동안 숨이 찼지만, 정상에 도착해서 본 억새밭은 정말 장관이었다. 은빛 억새가 바람에 일렁이는 모습이 마치 은빛 바다 같았다. 석양 무렵이라 하늘이 주황빛으로 물들면서 억새 위로 황금빛이 내려앉았다. 가을에는 꼭 여기 와야 한다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/20.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "10.05",
+      "title": "길고양이 두 마리를 만났다",
+      "diary_text": "길고양이 두 마리를 만났다. 한 마리는 줄무늬 치즈태비, 다른 한 마리는 까만 턱시도 고양이였다. 나란히 앉아 햇볕을 쬐고 있는 모습이 너무 평화로웠다. 가만히 지켜보다가 조심스럽게 사진을 찍었다. 고양이들의 여유로운 오후가 부러웠다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/21.jpg"
+    },
+    {
+      "type": "naeji_textonly",
+      "break_before": "page",
+      "date": "10.06",
+      "title": "아무것도 하지 않는 일요일",
+      "diary_text": "특별한 일은 없었지만 좋은 하루였다. 늦잠을 자고, 브런치를 해먹고, 빨래를 돌리고, 드라마를 좀 보고. 오후에 잠깐 동네 한 바퀴를 돌았는데 가을 햇살이 따뜻해서 기분이 좋았다. 이렇게 아무것도 하지 않는 일요일이 가끔은 필요하다. 저녁에는 냉장고에 남은 재료로 파스타를 만들어 먹었다. 생각보다 맛있게 됐다. 요리하면서 좋아하는 음악을 틀어놓으니 일요일의 마무리가 완벽했다."
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "10.13",
+      "title": "단풍이 들기 시작했다",
+      "diary_text": "단풍이 들기 시작했다. 은행나무 끝이 노랗게 물들고, 단풍나무도 주황빛을 띠기 시작한다. 아직 초입이라 초록과 노랑, 주황이 섞여 있는데 그 그라데이션이 오히려 더 예쁘다. 다음 주쯤이면 본격적으로 단풍이 들겠지. 올해 단풍 구경은 어디로 가볼까.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/23.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "10.17",
+      "title": "강릉에 왔다",
+      "diary_text": "강릉에 왔다. 순두부젤라또라는 걸 처음 먹어봤는데, 생각보다 맛있어서 놀랐다. 순두부의 고소한 맛과 젤라또의 달콤함이 묘하게 잘 어울린다. 강릉 바다는 동해라 그런지 파도가 시원하게 부서졌다. 커피거리에서 드립커피도 한 잔 마시며 여유로운 오후를 보냈다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/24.jpg"
+    },
+    {
+      "type": "naeji_gallery",
+      "break_before": "page",
+      "date": "10.18",
+      "photos": [
+        "https://www.sweetbook.com/api_sweetbook/images/diary/25.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/23.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/26.jpg"
+      ]
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "10.23",
+      "title": "창경궁을 구경했다",
+      "diary_text": "창경궁을 구경했다. 고궁에 단풍이 내려앉으니 정말 아름다웠다. 빨갛고 노란 나뭇잎 사이로 보이는 기와지붕이 그림 같았다. 연못 근처에서 한참 앉아 있었는데, 물 위에 떨어진 낙엽이 둥둥 떠다니는 모습이 운치 있었다. 궁궐 산책은 가을에 해야 제맛이다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/26.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "10.30",
+      "title": "광안리 해수욕장에 왔다",
+      "diary_text": "광안리 해수욕장에 왔다. 가을 바다는 여름과는 완전히 다른 분위기다. 사람이 적어 한적하고, 바다색도 더 짙어 보인다. 모래사장을 혼자 걷는데 바람이 세차게 불어와 코가 시려왔다. 그래도 파도 소리를 들으며 걷는 건 언제나 좋다. 광안대교 불빛이 바다 위에 반짝이는 밤 풍경까지 보고 왔다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/27.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "11.07",
+      "title": "별마당 도서관에 또 왔다",
+      "diary_text": "별마당 도서관에 또 왔다. 올해 벌써 두 번째다. 올 때마다 느끼지만 이 거대한 책장 앞에 서면 괜히 겸손해진다. 오늘은 여행 에세이를 한 권 골라 한쪽 구석에서 읽었다. 읽다 보니 다음 여행지 계획을 세우고 싶어졌다. 겨울에는 어디를 가볼까.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/28.jpg"
+    },
+    {
+      "type": "naeji_textonly",
+      "break_before": "page",
+      "date": "11.09",
+      "title": "가을이 거의 끝나가고 있다",
+      "diary_text": "단골 카페에서 오후를 보냈다. 날이 쌀쌀해져서 따뜻한 바닐라 라떼를 시켰다. 창밖에 낙엽이 후두둑 떨어지는 걸 보면서 멍하니 앉아 있었다. 가을이 거의 끝나가고 있다는 걸 실감했다. 내년 가을에도 이 카페 창가에서 같은 풍경을 바라보고 있을까. 올해 가을은 유난히 빨리 지나간 것 같다. 단풍도 벌써 져버렸고, 아침마다 코트 없이는 못 나갈 만큼 추워졌다."
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "11.20",
+      "title": "평택역에 내렸다",
+      "diary_text": "평택역에 내렸다. 출장 때문에 왔는데 역 앞 풍경이 생각보다 정겨웠다. 작은 분식집에서 떡볶이를 사 먹었는데 맛이 좋았다. 낯선 동네를 걷는 건 여행 아닌 여행 같아서 나름 즐거웠다. 돌아오는 기차 안에서 창밖을 내다보니 해가 지고 있었다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/30.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "11.30",
+      "title": "겨울이 오고 있다",
+      "diary_text": "겨울이 오고 있다. 아침에 입김이 나오기 시작했고, 나무들은 거의 다 잎을 떨궜다. 앙상한 가지 사이로 보이는 하늘이 더 넓어 보인다. 두꺼운 코트를 꺼내 입고 산책을 했는데, 찬 공기가 코끝을 스칠 때마다 겨울이 성큼 다가왔음을 느꼈다. 올겨울에는 눈이 많이 올까.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/31.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "12.05",
+      "title": "눈이 왔다",
+      "diary_text": "눈이 왔다! 아침에 커튼을 열었더니 세상이 하얗게 변해 있어서 심장이 뛰었다. 출근길에 발밑에서 뽀드득뽀드득 소리가 나는 게 좋았다. 사무실 창밖으로 눈 내리는 걸 보면서 일하니 기분이 묘했다. 퇴근길에는 눈이 그쳐서 아쉬웠지만, 쌓인 눈 위에 발자국을 찍으며 걸어왔다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/32.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "12.06",
+      "title": "눈사람과 눈오리",
+      "diary_text": "어제 내린 눈으로 누군가 공원에 눈사람을 만들어 놓았다. 동글동글 귀여운 눈사람에 당근 코와 나뭇가지 팔이 달려 있었다. 나도 옆에 작은 눈사람을 하나 만들어 놓고 왔다. 겨울의 소소한 즐거움.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/33.jpg"
+    },
+    {
+      "type": "naeji_gallery",
+      "break_before": "page",
+      "date": "12.07",
+      "photos": [
+        "https://www.sweetbook.com/api_sweetbook/images/diary/32.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/34.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/33.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/31.jpg"
+      ]
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "12.16",
+      "title": "동네 언덕 위에서 남산타워가 보였다",
+      "diary_text": "동네 언덕 위에서 남산타워가 보였다. 겨울 하늘이 맑아서 타워가 선명하게 보였는데, 꼭대기에 조명이 켜지면서 밤하늘에 우뚝 서 있는 모습이 멋있었다. 서울에 살면서도 남산타워를 이렇게 먼 곳에서 바라보는 건 색다른 경험이었다. 언젠가 저 위에서 야경을 봐야지.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/35.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "12.20",
+      "title": "크리스마스가 다가오니 거리 곳곳에…",
+      "diary_text": "크리스마스가 다가오니 거리 곳곳에 트리 장식이 빛나고 있다. 백화점 앞에 세워진 대형 트리 앞에서 잠시 멈춰 섰다. 반짝이는 조명과 오나먼트가 화려하면서도 따뜻한 느낌이었다. 캐럴이 흘러나오는 거리를 걸으며 올해도 어느덧 끝자락이구나 싶었다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/36.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "12.30",
+      "title": "연말 기분으로 딸기 디저트를 먹으…",
+      "diary_text": "연말 기분으로 딸기 디저트를 먹으러 갔다. 생딸기 타르트와 딸기 밀크티를 시켰는데, 빨간 딸기가 올려진 타르트가 너무 예뻐서 먹기 아까울 정도였다. 한 입 베어 무니 상큼하고 달콤한 맛에 올해의 마지막 디저트로 완벽했다. 내년에도 맛있는 것 많이 먹자.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/37.jpg"
+    },
+    {
+      "type": "ganji",
+      "year": 2025,
+      "chapter": 5,
+      "season_title": "겨울의 기록"
+    },
+    {
+      "type": "naeji_textonly",
+      "break_before": "page",
+      "date": "1.08",
+      "title": "새해 다짐",
+      "diary_text": "새해가 밝았는데 아직 실감이 나지 않는다. 일상은 작년과 크게 다를 게 없지만 달력 숫자가 바뀌었다는 것만으로 묘한 새로움이 있다. 오늘은 집 근처를 산책하며 올해 하고 싶은 것들을 머릿속으로 정리해봤다. 여행도 가고, 새로운 취미도 만들고, 사진도 많이 찍어야지. 작년에 세웠던 목표를 돌아보니 반 정도는 이룬 것 같다. 올해는 좀 더 욕심내볼까. 핸드폰 메모장에 올해 버킷리스트를 적었다. 1번은 역시 제주도 재방문."
+    },
+    {
+      "type": "ganji",
+      "year": 2025,
+      "chapter": 6,
+      "season_title": "봄의 기록"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "3.30",
+      "title": "봄이 왔다",
+      "diary_text": "봄이 왔다. 유채꽃 사진을 보다가 작년 제주도 여행이 떠올랐다. 4월 초에 봤던 유채꽃밭의 노란빛이 아직도 눈에 선하다. 바람에 일렁이던 유채꽃, 멀리 보이던 한라산, 따뜻했던 공기까지... 벌써 1년 전이라니. 올해도 제주에 가고 싶지만, 일단 이 사진 속 유채꽃으로 마음의 여행을 다녀온다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/39.jpg"
+    },
+    {
+      "type": "naeji_textonly",
+      "break_before": "page",
+      "date": "4.01",
+      "title": "만우절에 쓰는\n진심 가득한 일기",
+      "diary_text": "오늘은 만우절. 친구가 아침부터 장난 문자를 보내왔는데 웃기면서도 귀여웠다. 나도 뭔가 재미있는 거짓말을 하고 싶었지만 마땅한 게 떠오르지 않아 포기했다. 대신 카페에 가서 오래간만에 일기를 길게 써봤다. 사진 없이 글만으로 하루를 기록하는 것도 나름의 매력이 있다. 손글씨처럼 텍스트에도 그날의 온도가 담기는 것 같다. 오후에는 서점에 들러 새로 나온 에세이를 한 권 샀다. 제목이 마음에 들어서 골랐는데 첫 페이지를 펼치니 '거짓말처럼 좋은 날'이라고 적혀 있었다. 만우절에 딱 맞는 문장이라 혼자 웃었다."
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "4.02",
+      "title": "산책하다가 강아지 두 마리를 만났다",
+      "diary_text": "산책하다가 강아지 두 마리를 만났다. 한 마리는 골든 리트리버, 다른 한 마리는 비숑이었는데 나란히 엎드려서 쉬고 있었다. 주인 없이 둘이서 사이좋게 쉬는 모습이 너무 평화로웠다. 다가가니 골든이 꼬리를 살살 흔들어줬다. 비숑이는 눈만 살짝 떴다가 다시 감았다. 봄볕 아래 쉬는 강아지가 부러운 하루.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/40.jpg"
+    },
+    {
+      "type": "naeji_gallery",
+      "break_before": "page",
+      "date": "4.03",
+      "photos": [
+        "https://www.sweetbook.com/api_sweetbook/images/diary/15.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/22.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/28.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/33.jpg",
+        "https://www.sweetbook.com/api_sweetbook/images/diary/38.jpg"
+      ]
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "4.05",
+      "title": "벚꽃이 만개했다",
+      "diary_text": "벚꽃이 만개했다. 매년 보는 풍경인데도 매번 감탄하게 된다. 연분홍 꽃잎이 바람에 흩날리는 모습은 마치 눈이 내리는 것 같았다. 벚꽃 길을 걸으면서 올려다보니 하늘이 꽃잎 사이로 보여 예뻤다. 주말이라 사람이 많았지만, 그래도 벚꽃 아래 서 있으면 기분이 좋아진다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/41.jpg"
+    },
+    {
+      "type": "naeji_a",
+      "break_before": "page",
+      "date": "4.06",
+      "title": "어제에 이어 오늘도 벚꽃 구경",
+      "diary_text": "어제에 이어 오늘도 벚꽃 구경. 어제보다 바람이 좀 더 불어서 꽃잎이 더 많이 흩날렸다. 벤치에 앉아 꽃비를 맞으며 커피를 마셨다. 머리 위에 꽃잎이 하나 떨어져 앉아서 사진을 찍었다. 내일부터 비가 온다던데, 이 벚꽃이 다 지기 전에 충분히 즐긴 것 같아 다행이다.",
+      "photo1": "https://www.sweetbook.com/api_sweetbook/images/diary/42.jpg"
+    }
+  ]
+}
