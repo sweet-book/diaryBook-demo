@@ -1,0 +1,9 @@
+[
+  { "templateUid": "79yjMH3qRPly", "templateName": "일기장A_표지", "templateKind": "cover" },
+  { "templateUid": "5M3oo7GlWKGO", "templateName": "일기장A_간지", "templateKind": "content" },
+  { "templateUid": "46VqZhVNOfAp", "templateName": "일기장A_내지a", "templateKind": "content" },
+  { "templateUid": "5B4ds6i0Rywx", "templateName": "일기장A_내지b", "templateKind": "content" },
+  { "templateUid": "6c2HU8tipz1l", "templateName": "일기장A_내지_gallery", "templateKind": "content" },
+  { "templateUid": "5nhOVBjTnIVE", "templateName": "일기장A_발행면", "templateKind": "publish" },
+  { "templateUid": "2mi1ao0Z4Vxl", "templateName": "공용_빈내지", "templateKind": "content" }
+]
