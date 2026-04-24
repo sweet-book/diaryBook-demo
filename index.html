@@ -24,17 +24,8 @@
                     <p>JSON 파일을 업로드하여 일기장A / 일기장B 형식으로 책을 생성합니다</p>
                 </div>
 
-                <div class="config-bar">
-                    <div class="env-selector">
-                        <label><input type="radio" name="apiEnv" value="sandbox" checked /> 샌드박스</label>
-                        <label><input type="radio" name="apiEnv" value="live" /> 운영</label>
-                    </div>
-                    <input type="password" id="userApiKey" placeholder="API Key"
-                        onfocus="this.type='text'" onblur="this.type='password'" />
-                    <button class="btn btn-primary btn-sm" onclick="if(getClient()){document.getElementById('connStatus').textContent='연결됨'}">연결</button>
-                    <span id="connStatus" class="text-muted"></span>
-                    <span id="envWarning" class="env-warning" style="display:none;">운영 환경입니다. 실제 운영 데이터에 영향을 줍니다.</span>
-                </div>
+                <!-- 환경 배너 (서버의 SWEETBOOK_ENV 주입) -->
+                <div id="envBanner" class="env-banner"></div>
 
                 <!-- 일기장 타입 선택 -->
                 <div class="section-title">일기장 타입 선택</div>
@@ -121,9 +112,7 @@
         </div>
     </footer>
 
-    <script src="config.js"></script>
-    <script src="sweetbook-sdk-core.js"></script>
-    <script src="sweetbook-sdk-user.js"></script>
+    <script src="backend-client.js"></script>
     <script src="diary-config.js"></script>
     <script src="book-builder.js"></script>
     <script src="app.js"></script>

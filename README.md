@@ -1,9 +1,36 @@
-# diaryBook - 일기장 책 생성
+# diaryBook-demo — 일기장 책 생성
 
-일기장 A / B 타입의 책을 생성하는 웹앱입니다.
-JSON 데이터를 업로드하여 일기장 포토북을 만들 수 있습니다.
+일기장 A / B 타입의 책을 생성하는 웹앱입니다. JSON 데이터를 업로드하여 일기장 포토북을 만들 수 있습니다.
 
 ![screenshot](screenshot.png)
+
+> 이 demo는 **3-tier 구조**로 동작합니다. 브라우저는 Sweetbook API를 직접 부르지 않고,
+> Sweetbook SDK와 API Key는 이 demo의 백엔드(`server.js`) 프로세스 안에만 존재합니다.
+
+## 구조
+
+```
+ 브라우저 (index.html, app.js, book-builder.js)
+        │
+        │  fetch('/api/...')            ← backend-client.js가 감싼 래퍼
+        ▼
+ 이 demo 서버 (server.js, bookprintapi SDK 소유)
+        │
+        │  Sweetbook API Key (서버 env)
+        ▼
+ Sweetbook API
+```
+
+| 파일 | 역할 |
+|---|---|
+| `index.html`, `style.css` | 마크업 / 스타일 |
+| `app.js` | UI 이벤트, 책 생성 플로우, 일시중지/이어서하기 |
+| `book-builder.js` | entries 변환, 파라미터 빌더 |
+| `backend-client.js` | 브라우저→백엔드 /api/* 얇은 래퍼 (SDK 아님) |
+| `diary-config.js` | 템플릿 UID 매핑, 필드 정의 |
+| `server.js` | **백엔드**. `bookprintapi` SDK로 Sweetbook 호출. /api/* 노출 |
+| `.env` | 서버 전용 설정 (API Key, 환경). 브라우저로 안 내려감 |
+| `일기장A/`, `일기장B/` | 템플릿 CSV + 샘플 JSON |
 
 ## 일기장 A vs B
 
@@ -13,64 +40,67 @@ JSON 데이터를 업로드하여 일기장 포토북을 만들 수 있습니다
 | 날짜 | `day_num` (일수만) | `date` (M.DD 형식) |
 | 표지 | `coverPhoto` + `title` + `dateRange` | `frontPhoto` + `backPhoto` + `spineTitle` |
 
-## 구조
-
-```
-├── index.html              # 메인 앱
-├── app.js                  # 앱 로직 (UI, 책 생성 플로우)
-├── book-builder.js         # entries 변환, API 호출
-├── diary-config.js         # 템플릿 매핑, 필드 정의
-├── style.css               # 스타일
-├── sweetbook-sdk-core.js   # Sweetbook API SDK (core)
-├── sweetbook-sdk-user.js   # Sweetbook API SDK (user)
-├── config.example.js       # 설정 템플릿
-├── config.js               # 실제 설정 (git 제외)
-├── server.js               # 로컬 서버
-├── 일기장A/
-│   ├── templates/          # A 템플릿 CSV
-│   └── samples/            # A 샘플 JSON 데이터
-└── 일기장B/
-    ├── templates/          # B 템플릿 CSV
-    └── samples/            # B 샘플 JSON 데이터
-```
-
-## 설정
-
-1. `config.example.js`를 `config.js`로 복사합니다:
-
-```bash
-cp config.example.js config.js
-```
-
-2. `config.js`에 환경별 API 키를 설정합니다:
-
-```js
-const APP_CONFIG = {
-    environments: {
-        live: { label: '운영', url: 'https://api.sweetbook.com/v1', apiKey: '운영 API Key' },
-        sandbox: { label: '샌드박스', url: 'https://api-sandbox.sweetbook.com/v1', apiKey: '샌드박스 API Key' },
-    },
-    defaultEnv: 'sandbox',
-    useCookie: false,
-};
-```
-
 ## 실행
 
+### 1. 설정
+
 ```bash
-node server.js
+cp .env.example .env
+```
+
+`.env`를 열어 값을 채우세요:
+
+```ini
+SWEETBOOK_ENV=sandbox
+SWEETBOOK_API_KEY=sk_test_xxxxx
+PORT=8080
+```
+
+### 2. 의존성 설치
+
+```bash
+npm install
+```
+
+SDK는 npm 레지스트리가 아니라 **GitHub 태그**에서 바로 설치됩니다 (`package.json` 참고).
+
+### 3. 실행
+
+```bash
+npm start
 ```
 
 접속: http://localhost:8080
 
-## 환경 (샌드박스 / 운영)
+## 백엔드가 노출하는 REST 엔드포인트
 
-앱에서 **환경**을 선택할 수 있습니다:
+프론트의 `backend-client.js` 래퍼가 호출하는 좁은 API입니다.
 
-- **샌드박스** (기본값): 테스트 환경. 생성된 책은 sandbox에만 존재하며, 운영 데이터에 영향 없음.
-- **운영**: 실제 운영 환경. 운영 API Key가 필요합니다.
+| 메서드 | 경로 | 설명 |
+|---|---|---|
+| GET | `/api/env` | 서버 환경(sandbox/live) 반환. API Key는 내려주지 않음 |
+| POST | `/api/books` | 책 생성 |
+| POST | `/api/books/:uid/cover` | 표지 생성 |
+| POST | `/api/books/:uid/contents` | 내지 1장 삽입 (간지/내지/갤러리 공통) |
+| POST | `/api/books/:uid/finalize` | 책 최종화 |
 
-> **운영 환경에서는 실제 운영 데이터에 영향을 줍니다.**
+## 스모크 테스트
+
+서버 기동 후 최소 동작 확인:
+
+```bash
+npm start            # 터미널 1
+npm run smoke        # 터미널 2 — sandbox에서만 동작
+```
+
+기대 출력:
+```
+✓ GET /api/env → 200
+✓ env=sandbox
+✓ POST /api/books → 200
+✓ bookUid 발급: bk_xxx
+스모크 통과.
+```
 
 ## 사용법
 
@@ -115,31 +145,16 @@ node server.js
 | `naeji_textonly` | 글만 | `day_num`, `diary_text` |
 | `naeji_gallery` | 사진 여러 장 | `day_num`, `photos` |
 
-## 샘플 데이터
-
-| 타입 | 샘플 | 설명 |
-|------|------|------|
-| 일기장A | [일기장A_이안.json](일기장A/samples/일기장A_이안.json) | 6개월 54 entries, 실제 시안용 |
-| 일기장B | [일기장B_이안.json](일기장B/samples/일기장B_이안.json) | 1년 4개월 50 entries, 계절 간지 시안 |
-
 ## 커스터마이징
-
-이 데모를 자신의 서비스에 맞게 수정하려면:
 
 | 파일 | 수정 내용 |
 |------|----------|
 | `diary-config.js` | 템플릿 UID 변경, 필드 정의 추가/수정 |
 | `book-builder.js` | entries 변환 로직 수정 (자신의 데이터 형식에 맞게) |
 | `app.js` | UI 흐름 변경, 폼 필드 추가/제거 |
-| `config.js` | API 키, 서버 URL 설정 |
+| `server.js` | 새 백엔드 엔드포인트 추가 |
+| `.env` | API 키, 환경 설정 |
 
-### 자신의 데이터 형식 적용
+## 관련 레포
 
-1. `book-builder.js`의 `convertRawEntries()` 함수에서 JSON 데이터를 entries 배열로 변환하는 로직을 수정합니다.
-2. `diary-config.js`에서 자신의 템플릿 UID를 등록합니다.
-3. 필요시 `app.js`의 `handleFile()`에서 JSON 파싱/검증 로직을 수정합니다.
-
-## 주의사항
-
-> ⚠️ **프로덕션 주의**: `server.js`의 CORS 설정은 `Access-Control-Allow-Origin: *`로 모든 origin을 허용합니다.
-> 이는 로컬 개발용이며, 프로덕션 환경에서는 반드시 허용할 origin을 제한하세요.
+- [sweet-book/bookprintapi-nodejs-sdk](https://github.com/sweet-book/bookprintapi-nodejs-sdk) — 이 demo의 `server.js`가 사용하는 SDK

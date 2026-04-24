@@ -35,8 +35,9 @@ function stripEmptyImages(obj) {
     return result;
 }
 
-// ── API 호출 (SDK 사용) ──
+// ── API 호출 (백엔드 /api 경유 — SDK는 서버에 있음) ──
 async function sdkPostContent(client, bookUid, templateUid, parameters, breakBefore) {
+    // 호출 시그니처는 이전(SDK 직접 호출) 그대로 유지. client 인자는 호환용 (사용 안 함).
     return client.contents.insert(bookUid, templateUid, stripEmptyImages(parameters), {
         breakBefore: breakBefore === 'none' ? '' : breakBefore,
     });
