@@ -400,8 +400,9 @@ async function processEntries(ctx) {
     }, 'page');
     appendLog('발행면 완료', 'success');
 
-    const pageCount = publishResult?.pageCount || 0;
-    const lastPageNum = publishResult?.pageNum || 0;
+    // v0.3.0 SDK 부터 단건 응답은 pageMeta.currentPageCount 로 통일. 옛 pageCount 도 fallback.
+    const pageCount = publishResult?.pageMeta?.currentPageCount ?? publishResult?.pageCount ?? 0;
+    const lastPageNum = publishResult?.pageMeta?.lastPageNum ?? publishResult?.pageNum ?? 0;
     const tt = Date.now() - startTime;
     appendLog(`책 생성 완료! bookUid: ${bookUid}, pageCount=${pageCount}, pageNum=${lastPageNum}, 소요시간: ${(tt / 1000).toFixed(2)}초`, 'success');
     loading.classList.remove('show');
